@@ -15,6 +15,7 @@ while run:
             run = False
 
     pygame.draw.rect(screen, player_attack(), player_move(speed))
+    pygame.draw.rect(screen, GREEN, life_status((player_rect[0], player_rect[1])))
     pygame.display.update()
     clock.tick(FPS)
 
